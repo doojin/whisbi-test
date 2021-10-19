@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/set-cookie', (req, res) => {
-    res.cookie('testCookie', 'testValue', {
+    res.cookie('testCookie=test', {
         domain: 'events-whisbi.com',
         sameSite: 'none',
         secure: true
