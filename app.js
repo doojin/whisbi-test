@@ -5,8 +5,7 @@ const app = express();
 app.get('/set-cookie', (req, res) => {
     res.cookie('testCookie', 'testValue', {
         domain: 'events-whisbi.com',
-        sameSite: 'none',
-        secure: true
+        sameSite: 'none'
     });
 
     res.status(200).json({ ok: true });
